@@ -4,52 +4,18 @@ Hello and welcome to the Full Stack Engineer coding challenge at sherpa°!
 
 If you would rather show us something you have already worked on (either professionally, a side-project or from another interview), skip ahead to the Assessment section to ensure it covers the areas we want to see.
 
-If you want to build something new, continue reading.
+If you want to build something new, prepare to send no more than 3 hours on the below challenge.
 
 ## Context
 
-sherpa° sells visas to travellers to help them cross borders freely and efficiently. In order to help users find the visa they need to purchase, we need a *Products Application*. In this challenge we would like you to focus on either
+sherpa° sells visas to travellers to help them cross borders freely and efficiently. In order to help users find the visa they need to purchase, we need a *Products Application*. In this challenge we would like you to build a server and client to complete the following features.
 
-1. **Full Stack Read-Only Feature**: Implementing a read product feature on both the client and server
-2. **Frontend UI Feature with Mock API**: Implement a rich UI with a mock API for reading, sorting, filtering product info
-3. **Server Read & Write Feature**: Implement an API to read, write and update product details
-
-Each scenario is broken down further below. Pick the challenge which best exemplifies your skills and what you hope to do at sherpa°!
-
-#### Scenario 1: Full Stack Read-Only Feature
-
-Implement a feature both on the server and client to allow customers to 
-- Read all products, with
-    - Configurable [page](https://en.wikipedia.org/wiki/Pagination) sizes
-    - Filters for X, Y, and Z
+- Read all products (paginated and filtered by price, fee, name, length of stay and/or number of entries)
 - Read a single product
+- Edit a single product
+- Add a new product
 
-Feel free to use your judgement on which data needs to rendered for the list and single product views. Loading and reading the data from a database is not necessary but will be great to see!
-
-#### Scenario 2: Frontend UI Feature with Mock API
-
-Implement a feature on the client to allow customers to 
-- Read all products, with
-    - Configurable [page](https://en.wikipedia.org/wiki/Pagination) sizes
-    - Filters for price, fee, name, length of stay and number of entries
-- Read a single product
-
-Feel free to use your judgement on which data needs to rendered for the list and single product views. Given this scenario solely pertains to the front-end, feel free to mock the calls to the server and focus on accessibility and responsiveness to different screen sizes.
-
-
-#### Scenario 3: Full Stack CRUD API with Database
-
-Implement a feature on the server to allow customers to 
-- Read all products, with
-    - Configurable [page](https://en.wikipedia.org/wiki/Pagination) sizes
-    - Filters for X, Y, and Z
-- Read a single product
-- Add a product
-- Edit an existing product
-
-Also, add a script to load the CSV data into the database.
-
-This scenario expects you to use a database, we suggest [TypeORM](https://typeorm.io/) and SQLite. It also expects the data to be validated before saving.
+We do not expect you to complete all of the above features, so feel free to decide if you want to focus more on building a complete and robust RESTful API or a responsive/accessible user interface. Ensure that you at least integrate the server and client.
 
 ## A note on AI
 
@@ -61,13 +27,35 @@ In this repository, you will find an nx monorepo with
 
 1. An Angular application
 2. A Nest.JS application
-3. A CSV file of product information
+3. A CSV file of product information (documented below)
 
 The above were kept lightweight on purpose so you can decide which tools to add if needed.
 
-Lastly, feel free to add apps if you prefer to use a different framework, but make sure to set it up in Typescript.
+Lastly, feel free to change the frameworks if you prefer, but make sure to set it up in Typescript.
 
-### Data
+### To Add a React App
+
+```
+npx nx add @nx/react
+npx nx g @nx/react:application apps/react-client
+
+npx nx run react-client:serve
+```
+
+### To Add a Node.js App (Express, Fastify)
+
+```
+npx nx add @nx/node
+npx nx g @nx/node:application apps/node-server
+
+npx nx run node-server:serve
+```
+
+### Others
+
+Many commonly used/supported frameworks can be found [here](https://nx.dev/nx-api).
+
+## Data
 Here is the product information as a CSV
 ```
 Visa Name,Price (USD),Length of Stay (Days),Number of Entries,Filing Fee (USD)
@@ -121,28 +109,6 @@ Tourist Visa - Vietnam,25,30,Single,5
 Business Visa - Vietnam,50,180,Multiple,12
 Student Visa - Vietnam,150,730,Multiple,20
 ```
-
-### React
-
-```
-npx nx add @nx/react
-npx nx g @nx/react:application apps/react-client
-
-npx nx run react-client:serve
-```
-
-### Node.js (Express, Fastify)
-
-```
-npx nx add @nx/node
-npx nx g @nx/node:application apps/node-server
-
-npx nx run node-server:serve
-```
-
-### Others
-
-Many commonly used/supported frameworks can be found [here](https://nx.dev/nx-api).
 
 ## Setup
 
