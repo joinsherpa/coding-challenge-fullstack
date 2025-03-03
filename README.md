@@ -17,17 +17,13 @@ sherpa° sells visas to travellers to help them cross borders freely and efficie
 
 We do not expect you to complete all of the above features, so feel free to decide if you want to focus more on building a complete and robust RESTful API or a responsive/accessible user interface. Use your discretion on how much effort to spend on testing (unit, integration, etc.), but ensure that you at least integrate the server and client.
 
-## A note on AI
-
-If you want to use AI, it is totally fine (we use it too...), we just want to know so we can ask questions about what worked, what didn't and how you would use it going forward.
-
 ## Components
 
 In this repository, you will find an nx monorepo with
 
 1. An Angular application
 2. A Nest.JS application
-3. A CSV file of product information (documented below)
+3. A CSV file of product information [(documented below)](#data)
 
 The above were kept lightweight on purpose so you can decide which tools to add if needed.
 
@@ -58,56 +54,56 @@ Many commonly used/supported frameworks can be found [here](https://nx.dev/nx-ap
 ## Data
 Here is the product information as a CSV
 ```
-Visa Name,Price (USD),Length of Stay (Days),Number of Entries,Filing Fee (USD)
-Tourist Visa - USA,160,90,Single,20
-Business Visa - USA,185,180,Multiple,25
-Student Visa - USA,350,730,Multiple,50
-Tourist Visa - Canada,100,180,Single,15
-Business Visa - Canada,150,365,Multiple,30
-Student Visa - Canada,200,1095,Multiple,40
-Tourist Visa - UK,130,180,Single,25
-Business Visa - UK,200,365,Multiple,35
-Student Visa - UK,450,1095,Multiple,55
-Schengen Visa - France,80,90,Single,10
-Schengen Visa - Germany,90,90,Multiple,12
-Schengen Visa - Italy,85,90,Single,11
-Schengen Visa - Spain,88,90,Multiple,13
-Tourist Visa - Australia,145,90,Single,18
-Business Visa - Australia,250,365,Multiple,40
-Student Visa - Australia,620,1095,Multiple,60
-Tourist Visa - Japan,30,90,Single,8
-Business Visa - Japan,55,180,Multiple,12
-Student Visa - Japan,100,730,Multiple,25
-Tourist Visa - China,140,90,Single,20
-Business Visa - China,185,180,Multiple,30
-Student Visa - China,250,1095,Multiple,45
-Tourist Visa - India,25,30,Single,5
-Business Visa - India,75,180,Multiple,10
-Student Visa - India,100,365,Multiple,20
-Tourist Visa - Brazil,40,90,Single,10
-Business Visa - Brazil,160,180,Multiple,25
-Student Visa - Brazil,200,730,Multiple,35
-Tourist Visa - Russia,50,30,Single,15
-Business Visa - Russia,150,180,Multiple,25
-Student Visa - Russia,250,1095,Multiple,40
-Tourist Visa - UAE,90,30,Single,10
-Business Visa - UAE,120,180,Multiple,15
-Student Visa - UAE,250,1095,Multiple,35
-Tourist Visa - Mexico,36,180,Single,8
-Business Visa - Mexico,100,365,Multiple,20
-Student Visa - Mexico,200,1095,Multiple,30
-Tourist Visa - South Africa,50,90,Single,12
-Business Visa - South Africa,125,180,Multiple,18
-Student Visa - South Africa,200,1095,Multiple,30
-Tourist Visa - Argentina,150,90,Single,15
-Business Visa - Argentina,180,180,Multiple,25
-Student Visa - Argentina,250,1095,Multiple,35
-Tourist Visa - Thailand,35,60,Single,5
-Business Visa - Thailand,75,180,Multiple,10
-Student Visa - Thailand,175,730,Multiple,25
-Tourist Visa - Vietnam,25,30,Single,5
-Business Visa - Vietnam,50,180,Multiple,12
-Student Visa - Vietnam,150,730,Multiple,20
+Country,Visa Type,Price (USD),Length of Stay (Days),Number of Entries,Filing Fee (USD)
+USA,Tourist,160,90,Single,20
+USA,Business,185,180,Multiple,25
+USA,Student,350,730,Multiple,50
+Canada,Tourist,100,180,Single,15
+Canada,Business,150,365,Multiple,30
+Canada,Student,200,1095,Multiple,40
+UK,Tourist,130,180,Single,25
+UK,Business,200,365,Multiple,35
+UK,Student,450,1095,Multiple,55
+France,Schengen,80,90,Single,10
+Germany,Schengen,90,90,Multiple,12
+Italy,Schengen,85,90,Single,11
+Spain,Schengen,88,90,Multiple,13
+Australia,Tourist,145,90,Single,18
+Australia,Business,250,365,Multiple,40
+Australia,Student,620,1095,Multiple,60
+Japan,Tourist,30,90,Single,8
+Japan,Business,55,180,Multiple,12
+Japan,Student,100,730,Multiple,25
+China,Tourist,140,90,Single,20
+China,Business,185,180,Multiple,30
+China,Student,250,1095,Multiple,45
+India,Tourist,25,30,Single,5
+India,Business,75,180,Multiple,10
+India,Student,100,365,Multiple,20
+Brazil,Tourist,40,90,Single,10
+Brazil,Business,160,180,Multiple,25
+Brazil,Student,200,730,Multiple,35
+Russia,Tourist,50,30,Single,15
+Russia,Business,150,180,Multiple,25
+Russia,Student,250,1095,Multiple,40
+UAE,Tourist,90,30,Single,10
+UAE,Business,120,180,Multiple,15
+UAE,Student,250,1095,Multiple,35
+Mexico,Tourist,36,180,Single,8
+Mexico,Business,100,365,Multiple,20
+Mexico,Student,200,1095,Multiple,30
+South Africa,Tourist,50,90,Single,12
+South Africa,Business,125,180,Multiple,18
+South Africa,Student,200,1095,Multiple,30
+Argentina,Tourist,150,90,Single,15
+Argentina,Business,180,180,Multiple,25
+Argentina,Student,250,1095,Multiple,35
+Thailand,Tourist,35,60,Single,5
+Thailand,Business,75,180,Multiple,10
+Thailand,Student,175,730,Multiple,25
+Vietnam,Tourist,25,30,Single,5
+Vietnam,Business,50,180,Multiple,12
+Vietnam,Student,150,730,Multiple,20
 ```
 
 ## Setup
@@ -131,6 +127,10 @@ To run the server locally, run:
 npx nx run server:serve
 ```
 
+## Running into Issues
+
+If you have any issues with the above documentations, please contact us as soon as possible!
+
 ## Assessment
 
 Rather than focusing on the completeness of the challenge, here are some of the areas we care about:
@@ -145,6 +145,9 @@ Rather than focusing on the completeness of the challenge, here are some of the 
 - **Documentation**: do you have documentation for your API? 
 - **Errors**: how does your app handle errors (expected and unexpected)?
 
+## A note on AI
+
+If you want to use AI, it is totally fine (we use it too...), we just want to know so we can ask questions about what worked, what didn't and how you would use it going forward.
 
 ## Out of Scope Topics
 
