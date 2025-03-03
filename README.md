@@ -15,7 +15,7 @@ sherpa° sells visas to travellers to help them cross borders freely and efficie
 - Edit a single product
 - Add a new product
 
-We do not expect you to complete all of the above features, so feel free to decide if you want to focus more on building a complete and robust RESTful API or a responsive/accessible user interface. Ensure that you at least integrate the server and client.
+We do not expect you to complete all of the above features, so feel free to decide if you want to focus more on building a complete and robust RESTful API or a responsive/accessible user interface. Use your discretion on how much effort to spend on testing (unit, integration, etc.), but ensure that you at least integrate the server and client.
 
 ## A note on AI
 
@@ -151,5 +151,6 @@ Rather than focusing on the completeness of the challenge, here are some of the 
 We do not expect you to directly implement
 - Authentication
 - CI/CD and/or Deployment
+- Wireframes/Prototypes Documentation
 
 but, if you want to we are happy to talk about it!
