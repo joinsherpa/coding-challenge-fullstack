@@ -1,58 +1,73 @@
-# Full Stack Engineer Coding Challenge
+# 🌎 Fullstack Engineer Coding Challenge
 
-Hello and welcome to the Full Stack Engineer coding challenge at sherpa°!
+## Welcome to sherpa°!
 
-If you would rather show us something you have already worked on (either professionally, a side-project or from another interview), skip ahead to the Assessment section to ensure it covers the areas we want to see.
+We're excited to see your skills in action! This challenge is designed to showcase your full stack expertise in a real-world scenario that reflects our mission: helping travelers cross borders freely and efficiently.
 
-If you want to build something new, prepare to send no more than 3 hours on the below challenge.
+**Time Expectation:** Please spend no more than 3 hours on this challenge. We value your time and are more interested in your approach than completeness.
 
-## Context
+> Already have a project that demonstrates your skills? Skip to the [Assessment](#assessment) section to ensure it covers the areas we're looking for.
 
-sherpa° sells visas to travellers to help them cross borders freely and efficiently. In order to help users find the visa they need to purchase, we need a *Products Application*. In this challenge we would like you to build a server and client to complete the following features.
+## 🚀 The Challenge
 
-- Read all products (paginated and filtered by price, fee, name, length of stay and/or number of entries)
-- Read a single product
-- Edit a single product
-- Add a new product
+At sherpa°, we help travelers find and purchase the visas they need. Your mission is to build a **Products Application** with both client and server components that allows users to:
 
-We do not expect you to complete all of the above features, so feel free to decide if you want to focus more on building a complete and robust RESTful API or a responsive/accessible user interface. Use your discretion on how much effort to spend on testing (unit, integration, etc.), but ensure that you at least integrate the server and client.
+- Browse all visa products (with pagination and filtering)
+- View individual product details
+- Edit product information
+- Create new products
 
-## Components
+**Important:** We don't expect you to complete all features in the 3-hour timeframe! Choose your focus:
+- Build a robust, well-structured API
+- Create an intuitive, responsive UI
+- Strike a balance between both
 
-In this repository, you will find an nx monorepo with
+The only requirement is that your client and server components successfully integrate with each other.
+
+## 🛠️ Tech Stack
+
+This repository contains an nx monorepo with:
 
 1. An Angular application
-2. A Nest.JS application
-3. A CSV file of product information [(documented below)](#data)
+2. A NestJS application 
+3. A CSV dataset example of visa products
 
-The above were kept lightweight on purpose so you can decide which tools to add if needed.
+Feel free to use these or swap them for your preferred frameworks. Just ensure you're working with TypeScript. The setup is intentionally minimal to give you creative freedom without having to start from scratch.
 
-Lastly, feel free to change the frameworks if you prefer, but make sure to set it up in Typescript.
+This project mimiks our own codebase, so it gives you a preview of what you can expect joining the team!
 
-### To Add a React App
+### Prefer React?
+We understand you might not have all the Angular sills (yet) to hit the ground running. We deeply care about what user experience you're able to shape using technology as your tools. On the job we will support you getting up to speed with Angular.
 
+Follow the basic steps below to install react and create a new application for you to work with in Nx.
 ```
 npx nx add @nx/react
 npx nx g @nx/react:application apps/react-client
-
 npx nx run react-client:serve
 ```
 
-### To Add a Node.js App (Express, Fastify)
+### Prefer Express/Fastify/etc?
+We understand you might not have all the NestJS sills (yet) to hit the ground running. We deeply care about building resilient and performant APIs that are delightful for developers to use. On the job we will support you getting up to speed with NestJS.
 
 ```
 npx nx add @nx/node
 npx nx g @nx/node:application apps/node-server
-
 npx nx run node-server:serve
 ```
 
-### Others
+Other supported frameworks by Nx can be found [in the Nx online documentation](https://nx.dev/nx-api).
 
-Many commonly used/supported frameworks can be found [here](https://nx.dev/nx-api).
+## 📊 Data
 
-## Data
-Here is the product information as a CSV
+The provided CSV contains visa product information with the following fields:
+- Country
+- Visa Type
+- Price (USD)
+- Length of Stay (Days)
+- Number of Entries
+- Filing Fee (USD)
+
+
 ```
 Country,Visa Type,Price (USD),Length of Stay (Days),Number of Entries,Filing Fee (USD)
 USA,Tourist,160,90,Single,20
@@ -106,54 +121,49 @@ Vietnam,Business,50,180,Multiple,12
 Vietnam,Student,150,730,Multiple,20
 ```
 
-## Setup
+## 🚦 Getting Started
 
-You should only need to run yarn to be ready for development.
-
+Quick setup:
 ```
-npm i -g yarn # if you do not have yarn globally installed
+npm i -g yarn # if you don't have yarn installed
 yarn
 ```
 
-## Running Locally
-
-To run the client locally, run:
+Running the applications:
 ```
-npx nx run client:serve
-```
-
-To run the server locally, run:
-```
-npx nx run server:serve
+npx nx run client:serve  # For the frontend
+npx nx run server:serve  # For the backend
 ```
 
-## Running into Issues
+Need help? Contact us immediately if you encounter any setup issues!
 
-If you have any issues with the above documentations, please contact us as soon as possible!
+## ✅ Assessment Criteria
 
-## Assessment
+Rather than looking for a complete implementation, we're evaluating your approach across these key areas and don't expect you to excell in every single one but rather focus on very few that you want to impress us with:
 
-Rather than focusing on the completeness of the challenge, here are some of the areas we care about:
-- **Testing**: did you implement tests? which kind and where? how well do they give us confidence that the code works as expected?
-- **Typescript Use**: did you type your code well? does it give confidence that 
-- **Code Organization**: how did you organize components and files and why? how might it affect the maintainability?
-- **Code Readibility**: how did you name functions/variables? how do you structure a function or pass variables so it is easy to understand the purpose of the code?
-- **Developer experience**: how well did you document the front-end or back-end so that another developer would be able to work on / integrate with your app(s)?
-- **Tool/framework selection**: what tools did you add or use in your development and why? what are they good/bad at? what would you do differently in the future?
-- **Logging**: how well do you implement logging to make your application maintainable and understandable? what tools would you use to help with logging?
-- **Scaling**: how might you change your solution to handle millions of queries, users or products?
-- **Documentation**: do you have documentation for your API? 
-- **Errors**: how does your app handle errors (expected and unexpected)?
+### Code Quality
+- **Testing:** Strategic test implementation that builds confidence
+- **TypeScript Usage:** Effective type definitions and interfaces
+- **Code Organization:** Logical component/file structure for maintainability
+- **Readability:** Clear naming conventions and function structure
 
-## A note on AI
+### Architecture & Design
+- **Developer Experience:** Documentation that enables other developers to work with your code
+- **Tool Selection:** Thoughtful choices with clear rationale
+- **Scalability:** Considerations for handling growth (users, products, queries)
 
-If you want to use AI, it is totally fine (we use it too...), we just want to know so we can ask questions about what worked, what didn't and how you would use it going forward.
+### Professional Practice
+- **Logging:** Implementation for monitoring and debugging
+- **Documentation:** Clear API documentation
+- **Error Handling:** Graceful handling of expected and unexpected errors
 
-## Out of Scope Topics
-
-We do not expect you to directly implement
+### Out of Scope
+Don't worry about implementing:
 - Authentication
-- CI/CD and/or Deployment
-- Wireframes/Prototypes Documentation
+- CI/CD pipelines
+- Deployment configurations
+- Extensive wireframes/prototypes
 
-but, if you want to we are happy to talk about it!
+> **A note on AI:** Feel free to use AI tools if helpful—we do too! Just be prepared to discuss what worked, what didn't, and your thoughts on AI's role in development.
+
+We're excited to see your approach and discuss your solution. Good luck!
