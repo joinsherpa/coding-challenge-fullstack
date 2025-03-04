@@ -8,7 +8,7 @@ We're excited to see your skills in action! This challenge is designed to showca
 
 **Time Expectation:** Please spend no more than 3 hours on this challenge. We value your time and are more interested in your approach than completeness.
 
-> Already have a project that demonstrates your skills? Skip to the [Assessment](#assessment) section to ensure it covers the areas we're looking for.
+> Already have a project that demonstrates your skills? Skip to the [Assessment](#-assessment-criteria) section to ensure it covers the areas we're looking for.
 
 ## 🚀 The Challenge
 
