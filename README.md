@@ -26,6 +26,22 @@ At sherpa°, we help travelers find and purchase the visas they need. Your missi
 
 The only requirement is that your client and server components successfully integrate with each other.
 
+## 🚦 Getting Started
+
+Quick setup:
+```
+npm i -g yarn # if you don't have yarn installed
+yarn
+```
+
+Running the applications:
+```
+npx nx run client:serve  # For the frontend
+npx nx run server:serve  # For the backend
+```
+
+Need help? Contact us immediately if you encounter any setup issues!
+
 ## 🛠️ Tech Stack
 
 This repository contains an nx monorepo with:
@@ -122,23 +138,6 @@ Vietnam,Tourist,25,30,Single,5
 Vietnam,Business,50,180,Multiple,12
 Vietnam,Student,150,730,Multiple,20
 ```
-
-## 🚦 Getting Started
-
-Quick setup:
-```
-npm i -g yarn # if you don't have yarn installed
-yarn
-```
-
-Running the applications:
-```
-npx nx run client:serve  # For the frontend
-npx nx run server:serve  # For the backend
-```
-
-Need help? Contact us immediately if you encounter any setup issues!
-
 ## ✅ Assessment Criteria
 
 Rather than looking for a complete implementation, we're evaluating your approach across these key areas and don't expect you to excell in every single one but rather focus on very few that you want to impress us with:
